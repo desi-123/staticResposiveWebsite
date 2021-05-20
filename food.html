@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <!-- Required meta tags always come first -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+
+        <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
+        <link rel="stylesheet" href="css/styles.css">
+
+        <title>Portfolio Project</title>
+</head>
+
+<body>
+<!-- use lite-server to open my code -->
+    <div class="navbar navbar-expand-md navbar-dark fixed-top">
+        <div class="container">
+            <a href="#" class="navbar-brand"><img src="/img/logo.png" width="50" height="auto" class="rounded" alt=""></a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">7Rewards®</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="food.html" class="nav-link">Food</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="beverages.html" class="nav-link">Beverages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="money.html" class="nav-link">Money</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="7nowdelivery.html" class="nav-link">7NOW™ Delivery</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- background slider -->
+    <section id="showcase">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+                <li data-target="#myCarousel" data-slide-to="4"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item carousel-image-1 active">
+                    <div class="container">
+                        <div class="carousel-caption d-none d-sm-block text-center mb-4">
+                            <h1>Hot Food</h1>
+                            <p class="lead">We’ve got taquitos, mini tacos, hot dogs, pizza and more, waiting for you in store!</p>
+                            <a href="#" class="btn btn-danger btn-lg">Visit Us</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item carousel-image-2">
+                    <div class="container">
+                        <div class="carousel-caption d-none d-sm-block text-center mb-4">
+                            <h1>Bakeries</h1>
+                            <p class="lead">We’ve got Cookies, Muffins donuts, and more, waiting for you in store!</p>
+                            <a href="#" class="btn btn-warning btn-lg">Visit Us</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item carousel-image-3">
+                    <div class="container">
+                        <div class="carousel-caption d-none d-sm-block text-center mb-4">
+                            <h1>Candy</h1>
+                            <p class="lead">We’ve got watermelon, Gummi Worm Reeses king Size, and more, waiting for you in store!</p>
+                            <a href="#" class="btn btn-primary btn-lg">Visit Us</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item carousel-image-4">
+                    <div class="container">
+                        <div class="carousel-caption d-none d-sm-block text-center mb-4">
+                            <h1>Healthy Choices</h1>
+                            <p class="lead">We’ve got Sandwiches, Cup of Fruits, and more, waiting for you in store!</p>
+                            <a href="#" class="btn btn-success btn-lg">Visit Us</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item carousel-image-5">
+                    <div class="container">
+                        <div class="carousel-caption d-none d-sm-block text-center mb-4">
+                            <h1>Snacks</h1>
+                            <p class="lead">We’ve got 7-Select Kettle Chips, Fuergo, and more, waiting for you in store!</p>
+                            <a href="#" class="btn btn-info btn-lg">Visit Us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#myCarousel" class="carousel-control-prev" role="button" data-slide-to="prev">
+                <span class="carousel-control-prev-icon bg-dark"></span>
+                <span class="sr-only">previous</span>
+            </a>
+            <a href="#myCarousel" class="carousel-control-next" role="button" data-slide-to="next">
+                <span class="carousel-control-next-icon bg-dark"></span>
+                <span class="sr-only">next</span>
+            </a>
+        </div>
+    </section>
+    <hr>
+
+    <!-- foodList-->
+    <section id="foodlist" class="bg-warning text-white">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="dropdown">
+                    <button type="button" class="btn btn-lg btn-outline-danger m-2 dropdown-toggle" data-toggle="dropdown">Hot Foods
+                        <span class="sr-only">Toggle Dropdown</span>
+                    </button>
+                    <div class="dropdown-menu">
+                        <a href="#" class="dropdown-item">Pizza
+                            <div class="d-flex">
+                                <div class="align-self-start p-2">
+                                    <i class="fa fa-check bg-danger rounded"></i>
+                                </div>
+                                <div class="align-self-end p-2">
+                                    Pepperoni Pizza
+                                </div>
+                            </div>
+                            <div class="d-flex">
+                                <div class="align-self-start p-2">
+                                    <i class="fa fa-check bg-danger rounded"></i>
+                                </div>
+                                <div class="align-self-end p-2">
+                                    Exterme Meat Pizza
+                                </div>
+                            </div>
+                            <div class="d-flex">
+                                <div class="align-self-start p-2">
+                                    <i class="fa fa-check bg-danger rounded"></i>
+                                </div>
+                                <div class="align-self-end p-2">
+                                    Cheese Pizza
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="dropdown-item">Taquitos
+                            <div class="d-flex">
+                                <div class="align-self-start p-2">
+                                    <i class="fa fa-check bg-danger rounded"></i>
+                                </div>
+                                <div class="align-self-end p-2">
+                                    Monterey Jack Chicken
+                                </div>
+                            </div>
+                            <div class="d-flex">
+                                <div class="align-self-start p-2">
+                                    <i class="fa fa-check bg-danger rounded"></i>
+                                </div>
+                                <div class="align-self-end p-2">
+                                    Jalap Cheese Pizza
+                                </div>
+                            </div>
+                            <div class="d-flex">
+                                <div class="align-self-start p-2">
+                                    <i class="fa fa-check bg-danger rounded"></i>
+                                </div>
+                                <div class="align-self-end p-2">
+                                    Bufflalo Chicken
+                                </div>
+                            </div>
+                            <div class="d-flex">
+                                <div class="align-self-start p-2">
+                                    <i class="fa fa-check bg-danger rounded"></i>
+                                </div>
+                                <div class="align-self-end p-2">
+                                    Steak and Cheese
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="dropdown-item">Big Bite Hot Dog
+                            <div class="d-flex">
+                                <div class="align-self-start p-2">
+                                    <i class="fa fa-check bg-danger rounded"></i>
+                                </div>
+                                <div class="align-self-end p-2">
+                                    Spicy Bite
+                                </div>
+                            </div>
+                            <div class="d-flex">
+                                <div class="align-self-start p-2">
+                                    <i class="fa fa-check bg-danger rounded"></i>
+                                </div>
+                                <div class="align-self-end p-2">
+                                    Quarter-Pound
+                                </div>
+                            </div>
+                            <div class="d-flex">
+                                <div class="align-self-start p-2">
+                                    <i class="fa fa-check bg-danger rounded"></i>
+                                </div>
+                                <div class="align-self-end p-2">
+                                    1/8-big Bite
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="dropdown-item">Stuffed Pillsbury Waffle</a>
+                        <a href="#" class="dropdown-item">Nachos</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button type="button" class="btn btn-lg btn-outline-secondary m-2 dropdown-toggle" data-toggle="dropdown">Bakeries
+                        <span class="sr-only">Toggle Dropdown</span>
+                    </button>
+                    <div class="dropdown-menu">
+                        <a href="#" class="dropdown-item">Donat
+                            <div class="d-flex">
+                                <div class="align-self-start p-2">
+                                    <i class="fa fa-check bg-secondary rounded"></i>
+                                </div>
+                                <div class="align-self-end p-2">
+                                    Glased Ring
+                                </div>
+                            </div>
+                            <div class="d-flex">
+                                <div class="align-self-start p-2">
+                                    <i class="fa fa-check bg-secondary rounded"></i>
+                                </div>
+                                <div class="align-self-end p-2">
+                                    Mable Bar
+                                </div>
+                            </div>
+                            <div class="d-flex">
+                                <div class="align-self-start p-2">
+                                    <i class="fa fa-check bg-secondary rounded"></i>
+                                </div>
+                                <div class="align-self-end p-2">
+                                    Chocolate Bar
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="dropdown-item">Muffin
+                            <div class="d-flex">
+                                <div class="align-self-start p-2">
+                                    <i class="fa fa-check bg-secondary rounded"></i>
+                                </div>
+                                <div class="align-self-end p-2">
+                                    Banana Muffin
+                                </div>
+                            </div>
+                            <div class="d-flex">
+                                <div class="align-self-start p-2">
+                                    <i class="fa fa-check bg-secondary rounded"></i>
+                                </div>
+                                <div class="align-self-end p-2">
+                                    Blueberry Muffin
+                                </div>
+                            </div>
+                            <div class="d-flex">
+                                <div class="align-self-start p-2">
+                                    <i class="fa fa-check bg-secondary rounded"></i>
+                                </div>
+                                <div class="align-self-end p-2">
+                                    Pumpkin Muffin
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="dropdown-item">Cookies
+                            <div class="d-flex">
+                                <div class="align-self-start p-2">
+                                    <i class="fa fa-check bg-secondary rounded"></i>
+                                </div>
+                                <div class="align-self-end p-2">
+                                    Chocolate Chunk
+                                </div>
+                            </div>
+                            <div class="d-flex">
+                                <div class="align-self-start p-2">
+                                    <i class="fa fa-check bg-secondary rounded"></i>
+                                </div>
+                                <div class="align-self-end p-2">
+                                    Oatmeal Raisin Stuffed
+                                </div>
+                            </div>
+                            <div class="d-flex">
+                                <div class="align-self-start p-2">
+                                    <i class="fa fa-check bg-secondary rounded"></i>
+                                </div>
+                                <div class="align-self-end p-2">
+                                    Browin Chunk
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button type="button" class="btn btn-lg btn-outline-primary m-2 dropdown-toggle" data-toggle="dropdown">Candy
+                        <span class="sr-only">Toggle Dropdown</span>
+                    </button>
+                    <div class="dropdown-menu">
+                        <a href="#" class="dropdown-item">Candy
+                            <div class="d-flex">
+                                <div class="align-self-start p-2">
+                                    <i class="fa fa-check bg-primary rounded"></i>
+                                </div>
+                                <div class="align-self-end p-2">
+                                    Grummi Blue Shark
+                                </div>
+                            </div>
+                            <div class="d-flex">
+                                <div class="align-self-start p-2">
+                                    <i class="fa fa-check bg-primary rounded"></i>
+                                </div>
+                                <div class="align-self-end p-2">
+                                    Grummi worm
+                                </div>
+                            </div>
+                            <div class="d-flex">
+                                <div class="align-self-start p-2">
+                                    <i class="fa fa-check bg-primary rounded"></i>
+                                </div>
+                                <div class="align-self-end p-2">
+                                    Grummi beers
+                                </div>
+                            </div>
+                            <div class="d-flex">
+                                <div class="align-self-start p-2">
+                                    <i class="fa fa-check bg-primary rounded"></i>
+                                </div>
+                                <div class="align-self-end p-2">
+                                    Reeses King size
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button type="button" class="btn btn-lg btn-outline-info m-2 dropdown-toggle" data-toggle="dropdown">Snacks
+                        <span class="sr-only">Toggle Dropdown</span>
+                    </button>
+                    <div class="dropdown-menu">
+                        <a href="#" class="dropdown-item">Snacks
+                            <div class="d-flex">
+                                <div class="align-self-start p-2">
+                                    <i class="fa fa-check bg-info rounded"></i>
+                                </div>
+                                <div class="align-self-end p-2">
+                                    Cheez'it Snap'd
+                                </div>
+                            </div>
+                            <div class="d-flex">
+                                <div class="align-self-start p-2">
+                                    <i class="fa fa-check bg-info rounded"></i>
+                                </div>
+                                <div class="align-self-end p-2">
+                                    Bugles Original
+                                </div>
+                            </div>
+                            <div class="d-flex">
+                                <div class="align-self-start p-2">
+                                    <i class="fa fa-check bg-info rounded"></i>
+                                </div>
+                                <div class="align-self-end p-2">
+                                    Takis Fuergo
+                                </div>
+                            </div>
+                            <div class="d-flex">
+                                <div class="align-self-start p-2">
+                                    <i class="fa fa-check bg-info rounded"></i>
+                                </div>
+                                <div class="align-self-end p-2">
+                                    Kettle Spicy Jalapeno
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button type="button" class="btn btn-lg btn-outline-success m-2 dropdown-toggle" data-toggle="dropdown">Healthy Choices
+                        <span class="sr-only">Toggle Dropdown</span>
+                    </button>
+                    <div class="dropdown-menu">
+                        <a href="#" class="dropdown-item">Healthy Choices
+                            <div class="d-flex">
+                                <div class="align-self-start p-2">
+                                    <i class="fa fa-check bg-success rounded"></i>
+                                </div>
+                                <div class="align-self-end p-2">
+                                    Strawberry Cup Fruit
+                                </div>
+                            </div>
+                            <div class="d-flex">
+                                <div class="align-self-start p-2">
+                                    <i class="fa fa-check bg-success rounded"></i>
+                                </div>
+                                <div class="align-self-end p-2">
+                                    Watermelon
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button type="button" class="btn btn-lg btn-outline-dark m-2 dropdown-toggle" data-toggle="dropdown">Ice Cream
+                        <span class="sr-only">Toggle Dropdown</span>
+                    </button>
+                    <div class="dropdown-menu">
+                        <a href="#" class="dropdown-item">Ice Cream
+                            <div class="d-flex">
+                                <div class="align-self-start p-2">
+                                    <i class="fa fa-check bg-dark rounded"></i>
+                                </div>
+                                <div class="align-self-end p-2">
+                                    Banana Cream Pie
+                                </div>
+                            </div>
+                            <div class="d-flex">
+                                <div class="align-self-start p-2">
+                                    <i class="fa fa-check bg-dark rounded"></i>
+                                </div>
+                                <div class="align-self-end p-2">
+                                    Caramel Butter Pecan
+                                </div>
+                            </div>
+                            <div class="d-flex">
+                                <div class="align-self-start p-2">
+                                    <i class="fa fa-check bg-dark rounded"></i>
+                                </div>
+                                <div class="align-self-end p-2">
+                                    Chocolate Covered Strawberry
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+
+    <!--about hot foods  -->
+    <div id="hotFoods" class="py-2 text-center bg-danger text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div id="accordion">
+                        <h2 class="mb-2">
+                            <a class="btn btn-link" data-toggle="collapse" data-target="#collapseHotFood">
+                                <i class="fa fa-arrow-circle-down"></i>
+                                Tasty Hot Foods
+                            </a>
+                        </h2>
+                    </div>
+                    <div id="collapseHotFood" class="collapse show">
+                        <p class="lead">
+                            We’ve got taquitos, mini tacos, hot dogs, pizza and more, waiting for you in store! Craving an affordable meal that’ll fill you up, while keeping your wallet full? Grab a Big Bite® and a soda, while you’re at it. Try one of our many taquito flavors, and pair it with a Cold Pressed Juice. No matter what you end up grabbing, your taste buds are going to thank you.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-xl-2 col-sm-6">
+                    <div class="card-body">
+                        <img src="/img/hotFood/BigBite (2).jpg" alt="bigbite" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-3 col-xl-2 col-sm-6">
+                    <div class="card-body">
+                        <img src="/img/hotFood/BreakfastEmpanadas.jpg" alt="empanadas" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-3 col-xl-2 col-sm-6">
+                    <div class="card-body">
+                        <img src="/img/hotFood/cheeseBurger.jpg" alt="cheeseburger" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-3 col-xl-2 col-sm-6">
+                    <div class="card-body">
+                        <img src="/img/hotFood/Chicken-Sandwich.jpg" alt="chicken" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-3 col-xl-2 col-sm-6">
+                    <div class="card-body">
+                        <img src="/img/hotFood/ChickenTenders.jpg" alt="chicken tenders" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-3 col-xl-2 col-sm-6">
+                    <div class="card-body">
+                        <img src="/img/hotFood/MiniTacos.jpg" alt="minitaco" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-3 col-xl-2 col-sm-6">
+                    <div class="card-body">
+                        <img src="/img/hotFood/Nachos.jpg" alt="nachos" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-3 col-xl-2 col-sm-6">
+                    <div class="card-body">
+                        <img src="/img/hotFood/pizz.jpg" alt="pizza" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-3 col-xl-2 col-sm-6">
+                    <div class="card-body">
+                        <img src="/img/hotFood/Taquitos.jpg" alt="taquitos" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-3 col-xl-2 col-sm-6">
+                    <div class="card-body">
+                        <img src="/img/hotFood/Waffle.jpg" alt="waffle" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- bakery section -->
+    <div id="bakery" class="py-2 text-center bg-secondary text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div id="accordion">
+                        <h2 class="mb-2">
+                            <a class="btn btn-link" data-toggle="collapse" data-target="#collapseBakery">
+                                <i class="fa fa-arrow-circle-down"></i>
+                                Bakery and Fresh Sandwiches
+                            </a>
+                        </h2>
+                    </div>
+                    <div id="collapseBakery" class="collapse show">
+                        <p class="lead">
+                            Visit the bakery case and serenade your sweet tooth to scrumptious songs of flavor with baked goods like our Blueberry Muffins or Glazed Donuts. Our products are baked locally, and delivered fresh daily so we can give you the most delectable treats in town.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-xl-2 col-sm-6">
+                    <div class="card-body">
+                        <img src="/img/bakery/blueberry muffin.jpg" alt="blueberry muffin" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-3 col-xl-2 col-sm-6">
+                    <div class="card-body">
+                        <img src="/img/bakery/chocolate cookies.jpg" alt="chocolate cookie" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-3 col-xl-2 col-sm-6">
+                    <div class="card-body">
+                        <img src="/img/bakery/pumpkin muffin.jpg" alt="pumpkin muffin" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-3 col-xl-2 col-sm-6">
+                    <div class="card-body">
+                        <img src="/img/bakery/ring donut.jpg" alt="ring donut" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-3 col-xl-2 col-sm-6">
+                    <div class="card-body">
+                        <img src="/img/sandwiches/chicken salad.jpg" alt="chicken salad" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-3 col-xl-2 col-sm-6">
+                    <div class="card-body">
+                        <img src="/img/sandwiches/egg.jpg" alt="egg sandiwche" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-3 col-xl-2 col-sm-6">
+                    <div class="card-body">
+                        <img src="/img/sandwiches/breakfast.jpg" alt="breakfast sandiwche" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-3 col-xl-2 col-sm-6">
+                    <div class="card-body">
+                        <img src="/img/sandwiches/pepporni italian.jpg" alt="italian pepporni" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-3 col-xl-2 col-sm-6">
+                    <div class="card-body">
+                        <img src="/img/sandwiches/smart.jpg" alt="sandwiches smart" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-3 col-xl-2 col-sm-6">
+                    <div class="card-body">
+                        <img src="/img/sandwiches/smoked Turkey.jpg" alt="turkey" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- snack section -->
+    <div id="snack" class="py-2 text-center bg-info text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div id="accordion">
+                        <h2 class="mb-2">
+                            <a class="btn btn-link" data-toggle="collapse" data-target="#collapseSnack">
+                                <i class="fa fa-arrow-circle-down"></i>
+                                Snacks and Fresh Healthy Foods
+                            </a>
+                        </h2>
+                    </div>
+                    <div id="collapseSnack" class="collapse show">
+                        <p class="lead">We love snacks, and it shows.</p>
+                        <p class="lead">
+                            Grab our 7-Select Kettle Chips, or Takis Fuego Chips for that perfect crunch to your lunch. Stock up on Chex Mix for that pool party next weekend. We’ve got all the goods – all the snacks for any occasion, or no occasion at all. Hear that? It’s your couch calling. We’ve got a snack for that too.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-xl-2 col-sm-6">
+                    <div class="card-body">
+                        <img src="/img/snack/bugles crispy corn.jpg" alt="crispy" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-3 col-xl-2 col-sm-6">
+                    <div class="card-body">
+                        <img src="/img/snack/cheez-it snap'd jalapeno.jpg" alt="cheet-it" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-3 col-xl-2 col-sm-6">
+                    <div class="card-body">
+                        <img src="/img/snack/doritos Flaming.jpg" alt="doritos" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-3 col-xl-2 col-sm-6">
+                    <div class="card-body">
+                        <img src="/img/snack/spicy jalapeno.jpg" alt="jalapeno" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-3 col-xl-2 col-sm-6">
+                    <div class="card-body">
+                        <img src="/img/snack/tarkis fuego corn.jpg" alt="fuego corn" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-3 col-xl-2 col-sm-6">
+                    <div class="card-body">
+                        <img src="/img/fresh healthyFood/balsamic chicken salad.jpg" alt="chicken salad" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-3 col-xl-2 col-sm-6">
+                    <div class="card-body">
+                        <img src="/img/fresh healthyFood/blend.jpg" alt="blend" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-3 col-xl-2 col-sm-6">
+                    <div class="card-body">
+                        <img src="/img/fresh healthyFood/caprese side salad.jpg" alt="caprese" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-3 col-xl-2 col-sm-6">
+                    <div class="card-body">
+                        <img src="/img/fresh healthyFood/chicken Caesar pasta.jpg" alt="caesar" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-3 col-xl-2 col-sm-6">
+                    <div class="card-body">
+                        <img src="/img/fresh healthyFood/garden side salad.jpg" alt="side salad" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-3 col-xl-2 col-sm-6">
+                    <div class="card-body">
+                        <img src="/img/fresh healthyFood/harvest blend.jpg" alt="blend" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-3 col-xl-2 col-sm-6">
+                    <div class="card-body">
+                        <img src="/img/fresh healthyFood/savorey dips.jpg" alt="savory" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-3 col-xl-2 col-sm-6">
+                    <div class="card-body">
+                        <img src="/img/fresh healthyFood/strawberry.jpg" alt="strawberry" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-3 col-xl-2 col-sm-6">
+                    <div class="card-body">
+                        <img src="/img/fresh healthyFood/watermelon.jpg" alt="watermelon" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <!-- Ice cream section -->
+    <div id="Ice-cream" class="py-2 text-center bg-primary text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div id="accordion">
+                        <h2 class="mb-2">
+                            <a class="btn btn-link" data-toggle="collapse" data-target="#collapseCream">
+                                <i class="fa fa-arrow-circle-down"></i>
+                                Ice Cream and Candy
+                            </a>
+                        </h2>
+                    </div>
+                    <div id="collapseCream" class="collapse show">
+                        <p class="lead">We all scream, for ice cream.</p>
+                        <p class="lead">
+                            You’ve got a spoon, we’ve got an ice cream flavor to dunk it in. Try our 7-Select Banana Cream Pie Pint, or our classic, 7-Select Butter Pecan Pie flavor. It’s ice cream so, you really can’t go wrong. Explore your options below and pick out whatever fits your fancy. We’re warning you, no one ever walks out with just one pint. Is that such a bad thing?
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-xl-2 col-sm-6">
+                    <div class="card-body">
+                        <img src="/img/ice cream/banana cream.jpg" alt="ice cream banana" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-3 col-xl-2 col-sm-6">
+                    <div class="card-body">
+                        <img src="/img/ice cream/caramel butter.jpg" alt="caramel" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-3 col-xl-2 col-sm-6">
+                    <div class="card-body">
+                        <img src="/img/ice cream/chocolate covered strawberry.jpg" alt="coverd" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-3 col-xl-2 col-sm-6">
+                    <div class="card-body">
+                        <img src="/img/candy/gummi bear.jpg" alt="candy gummi" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-3 col-xl-2 col-sm-6">
+                    <div class="card-body">
+                        <img src="/img/candy/gummi bears.jpg" alt="gummi bear" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-3 col-xl-2 col-sm-6">
+                    <div class="card-body">
+                        <img src="/img/candy/gummi blue shark.jpg" alt="gummi blue" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-3 col-xl-2 col-sm-6">
+                    <div class="card-body">
+                        <img src="/img/candy/gummi peach rings.jpg" alt="gummi peach" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-3 col-xl-2 col-sm-6">
+                    <div class="card-body">
+                        <img src="/img/candy/gummi worm.jpg" alt="gummi" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-3 col-xl-2 col-sm-6">
+                    <div class="card-body">
+                        <img src="/img/candy/sour neon gummi worm.jpg" alt="candy sour" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer id="main-footer" class="bg-warning text-white text-center py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-lg-3">
+                    <h5>GET TO KNOW US</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">About 7-Eleven</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Newsroom</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <h5>FRANCHISE INFO</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Our Business-Model</a></li>
+                        <li><a href="#">Franchise Process</a></li>
+                        <li><a href="#">Franchise for Veterans</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <h5>HOW CAN WE HELP?</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">New Vendor Information</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <h5>DOWNLOAD</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">7-Eleven App</a></li>
+                        <li><a href="#">7Now Delivery App</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>
